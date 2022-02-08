@@ -1,11 +1,20 @@
 {
+  "name": "teste",
+  "displayName": "teste",
   "expo": {
     "name": "teste",
     "slug": "teste",
     "version": "1.0.0",
     "assetBundlePatterns": [
       "**/*"
-    ]
-  },
-  "name": "teste"
+    ],
+    "ios": {
+      "bundleIdentifier": "com.teste",
+      "buildNumber": "1.0.0"
+    },
+    "android": {
+      "package": "com.teste",
+      "versionCode": 1
+    }
+  }
 }
