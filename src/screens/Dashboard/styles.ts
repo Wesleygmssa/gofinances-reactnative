@@ -2,8 +2,8 @@ import styled from 'styled-components/native';
 import {RFPercentage, RFValue} from 'react-native-responsive-fontsize';
 import { Feather } from '@expo/vector-icons';
 import {getStatusBarHeight} from 'react-native-iphone-x-helper'
-
-
+import {DataListProps} from '.'
+import { FlatList } from 'react-native';
 export const Container = styled.View`
   flex: 1;
   background-color: ${props => props.theme.colors.background};
@@ -86,5 +86,5 @@ font-family: ${props => props.theme.fonts.regular};
 margin-bottom: ${RFValue(16)}px;
 `
 
-export const TransactionList = styled.FlatList`
+export const TransactionList = styled(FlatList as new () => FlatList<DataListProps>)`
 `;
