@@ -6,7 +6,7 @@ interface Props {
   title: string;
 }
 
-export function CategorySelect({ title }: Props) {
+export function CategorySelectButton({ title }: Props) {
   return (
     <Container>
       <Category>{title}</Category>
