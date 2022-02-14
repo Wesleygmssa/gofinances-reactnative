@@ -1,7 +1,6 @@
 import { StatusBar } from 'expo-status-bar';
 import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
-import { Register } from './src/screens/Register';
+import { CategorySelect } from './src/screens/CategorySelect';
 import { ThemeProvider } from 'styled-components'
 import Theme from './src/global/styles/theme';
 import AppLoading from 'expo-app-loading';
@@ -25,7 +24,7 @@ export default function App() {
   }
   return (
     <ThemeProvider theme={Theme}>
-      <Register />
+      <CategorySelect />
     </ThemeProvider>
   );
 }
